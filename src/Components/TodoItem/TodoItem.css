@@ -1,0 +1,72 @@
+.todo-item {
+  width: 100%;
+  height: 60px;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  background-color: var(--secondary);
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.todo-item:not(.todo-new) {
+  cursor: move;
+}
+
+.todo-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 0 20px;
+  background-color: transparent;
+  border: 2px solid var(--text-on-secondary);
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 2s ease-in-out;
+}
+
+.todo-checkbox:hover {
+  border: 2px solid var(--gradient-bottom);
+}
+
+.todo-checkbox.checked {
+  background-image: var(--primary-gradient);
+  border: none;
+  width: 25px;
+  height: 25px;
+}
+
+.todo-input {
+  outline: none;
+  border: none;
+  caret-color: var(--select);
+  color: var(--text-on-primary);
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: all 1s ease-in-out;
+  background-color: transparent;
+  font-weight: 500;
+}
+
+.todo-input::placeholder {
+  font-size: 0.9rem;
+}
+
+.todo-item:not(.todo-new) .todo-input.completed {
+  color: var(--text-on-secondary);
+  font-weight: normal;
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-undo {
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+.todo-item:hover .todo-undo {
+  visibility: visible;
+}

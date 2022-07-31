@@ -1,0 +1,24 @@
+.todo-footer {
+  display: flex;
+  padding: 15px 20px;
+  justify-content: space-between;
+  color: var(--text-on-secondary);
+  font-size: 0.85rem;
+  background-color: var(--secondary);
+}
+
+.todo-filter {
+  display: flex;
+  column-gap: 10px;
+}
+
+.todo-footer button {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.todo-filter .active {
+  color: var(--select);
+}

@@ -1,0 +1,16 @@
+.todo-list {
+  position: absolute;
+  top: 28%;
+  max-width: 500px;
+  width: 100%;
+  background-color: var(--text-on-secondary);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1px;
+}
+
+.todo-list .todo-item {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}

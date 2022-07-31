@@ -1,0 +1,38 @@
+.todo {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.header {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 375px) {
+  .header {
+    top: 10%;
+  }
+}
+
+.header .title {
+  letter-spacing: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  max-width: 500px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.todo-new {
+  position: absolute;
+  top: 18%;
+}
